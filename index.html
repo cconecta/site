@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cconecta – Conectando sonhos, transformando vidas</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ========== NAVBAR ========== -->
+  <header class="navbar" id="navbar">
+    <div class="navbar__inner">
+      <a href="#home" class="navbar__logo">
+        <img src="assets/logo.svg" alt="Cconecta" class="logo-img" width="114" height="70" />
+      </a>
+      <nav class="navbar__nav" id="nav-menu">
+        <ul class="navbar__links">
+          <li><a href="#quem-somos" class="nav-link">quem somos</a></li>
+          <li><a href="#projetos"   class="nav-link">projetos</a></li>
+          <li><a href="#campanhas"  class="nav-link">campanhas</a></li>
+          <li><a href="#voluntario" class="nav-link">seja voluntário</a></li>
+        </ul>
+        <a href="#doe" class="btn btn--primary btn--sm nav-cta">Doe aqui</a>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Abrir menu" aria-expanded="false">
+        <span class="hamburger__line"></span>
+        <span class="hamburger__line"></span>
+        <span class="hamburger__line"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero" id="home">
+    <div class="hero__shape-yellow"></div>
+    <!-- <span class="dot dot--sm dot--dark" style="top:22%;left:57%"></span>
+    <span class="dot dot--md dot--dark" style="bottom:12%;right:3.5%"></span> -->
+
+    <div class="container hero__inner">
+      <div class="hero__content reveal">
+        <h1 class="hero__title">Conectando sonhos,<br/>transformando vidas.</h1>
+        <p class="hero__desc">
+          O Cconecta nasceu da escuta, do afeto e da vontade de transformar.
+          Atuamos em favelas e comunidades levando educação digital,
+          desenvolvimento emocional e experiências culturais.
+        </p>
+        <div class="hero__btns">
+          <a href="#doe"        class="btn btn--primary">Doe agora</a>
+          <a href="#voluntario" class="btn btn--outline">Quero ser voluntário</a>
+        </div>
+      </div>
+      <div class="hero__illustration reveal reveal--right">
+        <img src="assets/bee-hero.svg" alt="Abelha Cconecta" class="bee-hero" width="265" height="468" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== QUEM SOMOS ========== -->
+  <section class="quem-somos" id="quem-somos">
+    <div class="container quem-somos__inner">
+      <div class="quem-somos__illustration reveal reveal--left">
+        <img src="assets/bee-hive.svg" alt="Abelha e colmeia" class="bee-hive" width="642" height="335" />
+      </div>
+      <div class="quem-somos__content reveal">
+        <h2 class="section-title">Quem somos</h2>
+        <p>Fundado por Paula e movido por uma rede de voluntários e apoiadores, o Cconecta
+        atua principalmente em territórios de alta vulnerabilidade social, levando educação
+        digital, desenvolvimento emocional e experiências culturais para crianças,
+        adolescentes e adultos.</p>
+        <p>Mais do que formar para o mercado, formamos para a vida. Acreditamos que cada
+        pessoa carrega em si um potencial único, e nossa missão é apoiar o florescimento
+        desse potencial através de vínculos, formação e acesso.</p>
+        <p>Conectamos pessoas, sonhos, ferramentas e territórios. Porque ninguém caminha só
+        — e a transformação acontece quando caminhamos juntos.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== MISSÃO / VISÃO / VALORES ========== -->
+  <section class="mvv" id="mvv">
+    <!-- <span class="dot dot--md dot--dark" style="top:6%;right:2%"></span> -->
+    <div class="container mvv__grid">
+
+      <div class="mvv__card reveal">
+        <div class="mvv__icon">
+          <img src="assets/ilu-missao.svg" alt="Missão" width="250"  />
+        </div>
+        <div>
+          <h3>Missão</h3>
+          <p>Transformar vidas com educação, tecnologia e autoconhecimento.</p>
+          <a href="#" class="link-saiba">saiba mais</a>
+        </div>
+      </div>
+
+      <div class="mvv__card reveal" style="--delay:.15s">
+        <div class="mvv__icon">
+          <img src="assets/ilu-visao.svg" alt="Visão" width="180" />
+        </div>
+        <div>
+          <h3>Visão</h3>
+          <p>Ser referência em inclusão tecnológica nas comunidades.</p>
+          <a href="#" class="link-saiba">saiba mais</a>
+        </div>  
+      </div>
+
+      <div class="mvv__card reveal" style="--delay:.3s">
+        <div class="mvv__icon">
+          <img src="assets/ilu-valores.svg" alt="Valores" width="180"  />
+        </div>
+        <div>
+          <h3>Valores</h3>
+          <p>Compaixão, equidade, conexão, coragem coletiva.</p>
+          <a href="#" class="link-saiba">saiba mais</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========== PROJETOS – intro com abelha ========== -->
+  <section class="projetos" id="projetos">
+    <div class="container projetos__intro-wrap">
+      <div class="projetos__intro reveal">
+        <h2 class="section-title">Projetos</h2>
+        <p>No Cconecta, acreditamos que a transformação acontece quando abrimos portas e nossos projetos
+        são essas portas. Cada ação nasce do desejo de ampliar oportunidades, fortalecer vínculos e
+        promover o acesso à educação, à tecnologia e ao autoconhecimento dentro das comunidades.</p>
+        <p class="projetos__subtitle">Conexão entre Projetos</p>
+        <p>O nome Cconecta vem do nosso maior objetivo: conectar projetos e pessoas. Trabalhamos para levar
+        iniciativas já existentes para dentro das favelas, fortalecendo redes de apoio e otimizando recursos
+        locais. Onde há vontade de transformar, buscamos estar juntos.</p>
+      </div>
+      <div class="projetos__bee reveal reveal--right">
+        <img src="assets/bee-cloud.svg" alt="Abelha na nuvem" class="bee-cloud" width="424" height="469" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PROJETOS – lista ========== -->
+  <section class="projetos-lista" id="campanhas">
+    <div class="container projetos-lista__inner">
+
+      <!-- Coluna Esquerda -->
+      <div class="projetos__col">
+        <div class="projeto-item reveal">
+          <div class="projeto-item__content">
+            <h3><span class="bullet">•</span> Conecta Futuro</h3>
+            <h4>Code Club nas Comunidades</h4>
+            <p>Em parceria com o Code Club Brasil, oferecemos oficinas de introdução à programação
+            para crianças e adolescentes. As aulas são realizadas dentro das próprias comunidades,
+            com foco em criatividade, pensamento lógico e construção de projetos digitais.
+            Começamos no Morro do Banco e hoje seguimos ampliando nosso impacto para outros
+            territórios do Rio.</p>
+          </div>
+        </div>
+        <div class="projeto-item__content__image">
+          
+            <img src="assets/bee-children.svg" alt="Crianças em frente ao Cristo Redentor" width="432" height="432" />
+
+        </div>
+      </div>
+
+      <!-- Coluna Direita -->
+      <div class="projetos__col projetos__col--right">
+
+        <div class="projeto-item reveal" style="--delay:.15s">
+          <div class="projeto-item__content">
+            <h3><span class="bullet">•</span> Código do Sentir</h3>
+            <h4>Educação Emocional e Cultura</h4>
+            <p>Acreditamos que a educação vai além do conteúdo. Por isso, oferecemos oficinas de
+            educação emocional, momentos de escuta, criação de histórias, dinâmica interativas e
+            expressões artísticas. Também promovemos ações culturais como passeios e encontros
+            comunitários, porque cultura também é direito.</p>
+          </div>
+        </div>
+
+        <div class="projeto-item reveal" style="--delay:.3s">
+          <div class="projeto-item__content">
+            <h3><span class="bullet">•</span> Conecta Digital</h3>
+            <h4>Informática para Jovens e Adultos</h4>
+            <p>Curso de informática voltado para jovens e adultos da comunidade. Mais do que ensinar
+            a usar o computador, o Conecta Digital abre portas para o mundo do trabalho, do
+            conhecimento e da autoestima.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer" id="doe">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <img src="assets/logo.svg" alt="Cconecta" class="logo-img logo-img--white" width="114" height="70" />
+        <p>Conectando sonhos, transformando vidas.</p>
+      </div>
+      <nav class="footer__links" aria-label="Links do rodapé">
+        <a href="#quem-somos">Quem somos</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#mvv">Missão &amp; Valores</a>
+        <a href="#voluntario">Seja voluntário</a>
+      </nav>
+      <div class="footer__cta" id="voluntario">
+        <a href="mailto:contato@cconecta.org" class="btn btn--primary">Doe agora</a>
+        <a href="mailto:contato@cconecta.org" class="btn btn--outline btn--light">Seja voluntário</a>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>© 2024 Cconecta. Feito com 💛 para as comunidades.</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
