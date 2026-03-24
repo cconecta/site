@@ -3,6 +3,42 @@
    ============================================================ */
 
 document.addEventListener('DOMContentLoaded', () => {
+  /* ──────────────────────────────────────────
+     MODAL PIX DOAÇÃO
+  ────────────────────────────────────────── */
+  function openPixModal() {
+    document.getElementById('modal-pix').classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+  function closePixModal() {
+    document.getElementById('modal-pix').classList.remove('open');
+    document.body.style.overflow = '';
+  }
+  // Abrir modal em todos os botões de doação
+  document.querySelectorAll('.btn--primary, .nav-cta').forEach(btn => {
+    if (btn.textContent.trim().toLowerCase().includes('doe')) {
+      btn.addEventListener('click', function(e) {
+        // Evita navegação ou envio de email
+        e.preventDefault();
+        openPixModal();
+      });
+    }
+  });
+  // Fechar modal
+  document.getElementById('modal-pix-close').addEventListener('click', closePixModal);
+  document.getElementById('modal-pix-overlay').addEventListener('click', closePixModal);
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') closePixModal();
+  });
+  // Copiar chave PIX
+  document.getElementById('modal-pix-copy').addEventListener('click', function() {
+    const chave = document.querySelector('.modal-pix__chave').textContent.trim();
+    navigator.clipboard.writeText(chave).then(() => {
+      const copied = document.getElementById('modal-pix-copied');
+      copied.style.display = 'inline';
+      setTimeout(() => { copied.style.display = 'none'; }, 1800);
+    });
+  });
 
   /* ──────────────────────────────────────────
      1. HAMBURGER MENU

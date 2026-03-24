@@ -1,4 +1,94 @@
 /* ============================================================
+   MODAL PIX DOAÇÃO
+   ============================================================ */
+.modal-pix {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0; top: 0; width: 100vw; height: 100vh;
+  align-items: center; justify-content: center;
+  justify-items: center;
+}
+.modal-pix.open {
+  display: flex;
+}
+.modal-pix__overlay {
+  position: absolute;
+  left: 0; top: 0; width: 100vw; height: 100vh;
+  background: rgba(0,0,0,0.45);
+  z-index: 1;
+}
+/* Centraliza o modal verticalmente sem scroll */
+.modal-pix__content {
+  position: relative;
+  z-index: 2;
+  background: var(--white);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-md);
+  padding: 2.5rem 2rem 2rem 2rem;
+  max-width: 370px;
+  width: 92vw;
+  text-align: center;
+  animation: modalIn .25s cubic-bezier(.4,0,.2,1);
+  top: 0;
+  left: 0;
+  margin: 0;
+  transform: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+@keyframes modalIn {
+  from { opacity: 0; transform: translateY(40px) scale(0.98); }
+  to   { opacity: 1; transform: none; }
+}
+.modal-pix__close {
+  position: absolute;
+  top: 1rem; right: 1rem;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: var(--text-soft);
+  cursor: pointer;
+  z-index: 3;
+  transition: color .2s;
+}
+.modal-pix__close:hover { color: var(--pink-btn); }
+.modal-pix__desc {
+  font-size: 1.02rem;
+  color: var(--text-soft);
+  margin-bottom: 1.2rem;
+}
+.modal-pix__chave {
+  display: inline-block;
+  font-family: monospace;
+  font-size: 1.1rem;
+  background: var(--cream);
+  padding: .35rem .7rem;
+  border-radius: var(--radius-pill);
+  margin: .5rem 0 0.2rem 0;
+  letter-spacing: 1px;
+}
+.modal-pix__legal {
+  font-size: .92rem;
+  color: var(--text-soft);
+  margin-bottom: 1.2rem;
+}
+.modal-pix__copy {
+  margin-bottom: 0.2rem;
+}
+.modal-pix__copied {
+  display: block;
+  color: var(--yellow-dark);
+  font-size: .93rem;
+  margin-top: 0.6rem;
+  margin-bottom: 0.2rem;
+  width: 100%;
+  text-align: center;
+}
+
+/* ============================================================
    CCONECTA – style.css
    ============================================================ */
 

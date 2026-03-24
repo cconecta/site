@@ -193,7 +193,7 @@
   </section>
 
   <!-- ========== FOOTER ========== -->
-  <footer class="footer" id="doe">
+  <footer class="footer">
     <div class="container footer__inner">
       <div class="footer__brand">
         <img src="assets/logo.svg" alt="Cconecta" class="logo-img logo-img--white" width="114" height="70" />
@@ -214,6 +214,24 @@
       <p>© 2024 Cconecta. Feito com 💛 para as comunidades.</p>
     </div>
   </footer>
+
+  <!-- ========== MODAL DOAÇÃO PIX ========== -->
+  <div id="modal-pix" class="modal-pix">
+    <div class="modal-pix__overlay" id="modal-pix-overlay"></div>
+    <div class="modal-pix__content">
+      <button class="modal-pix__close" id="modal-pix-close" aria-label="Fechar modal">&times;</button>
+      <h2>Doe via PIX</h2>
+      <p class="modal-pix__desc">
+        Sua doação fortalece a transformação social nas comunidades!<br>
+        O <strong>Cconecta</strong> leva educação digital, desenvolvimento emocional e experiências culturais para crianças, jovens e adultos em territórios de alta vulnerabilidade.<br><br>
+        <strong>Chave PIX (CNPJ):</strong><br>
+        <span class="modal-pix__chave">61.337.410/0001-17</span>
+      </p>
+      <p class="modal-pix__legal">A doação é voluntária, segura e contribui diretamente para a continuidade dos nossos projetos. Doe com responsabilidade e ajude a construir novas oportunidades!</p>
+      <button class="btn btn--primary modal-pix__copy" id="modal-pix-copy">Copiar chave PIX</button>
+      <span class="modal-pix__copied" id="modal-pix-copied" style="display:none;">Chave copiada!</span>
+    </div>
+  </div>
 
   <script src="main.js"></script>
 </body>
